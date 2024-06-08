@@ -5,13 +5,12 @@ import re
 from time import sleep
 
 
-CHAT_IDS = ["6322851361", "6815733629"]
-LIST_IDS = ["pLmKZJKw"]
-BOT_TOKEN = "7251666204:AAFX-qCa-3FF2JPa5TkQ6l_EOxz52dD0JT4"
+CHAT_IDS = ["idtele1", "idtele2"]
+LIST_IDS = ["idtf1", "idtf2"]
+BOT_TOKEN = "token bot here!"
 BOT_URL = "https://api.telegram.org/bot{}/sendMessage".format(BOT_TOKEN)
-MSG_NO_FULL = "TestFlight slots for <b>{}</b> beta are now available! \
-<a href='{}'>Download now</a>"
-MSG_FULL = "<b>{}</b> beta program on TestFlight is now full"
+MSG_NO_FULL = "Nhóc, <b>{}</b> hiện đã mở thêm slot!\n\n<a href='{}'>Truy Cập Nhanh</a>"
+MSG_FULL = "<b>{}</b> hiện đã đầy!"
 
 
 def send_notification(tf_id, free_slots, title):
